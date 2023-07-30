@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Generator</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="pixel.css">
+    <!-- JS -->
+    <script src="pixel.js" defer></script>
+</head>
+
+<body class="d-flex">
+    <div class="container-wrapper d-flex">
+        <!-- Upper part of the container -->
+        <div class="upper-part">
+            <!-- Dimensions -->
+            <div class="dimensions  d-flex">
+                <!-- Grid-width slider -->
+                <div class="grid-width">
+                    <label for="g-width">Grid Width</label><br>
+                    <input id="g-width" type="range" min="00" max="30" class="mar-top" value="20">
+                    <span class="width-val">20</span>
+                </div>
+                <!-- Grid-height slider -->
+                <div class="grid-height">
+                    <label for="g-height">Grid Height</label><br>
+                    <input id="g-height" type="range" min="00" max="30" class="mar-top" value="15">
+                    <span class="height-val">15</span>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="btn-container mar-top d-flex">
+                <button class="create-btn">Create Grid</button>
+                <button class="clear-btn d-disp">Clear Grid</button>
+                <input type="color" class="color-pall">
+                <button class="er-btn d-disp">Erase</button>
+                <button class="pnt-btn d-disp">Paint</button>
+            </div> 
+        </div>
+
+        <!-- Lower part- Grid section -->
+        <div class="grid-container mar-top d-disp"></div>
+
+        </div>
+    </div>
+</body>
+</html>

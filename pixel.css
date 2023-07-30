@@ -1,0 +1,88 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+
+}
+:root{
+    --bg-color:#fac02a;
+    --primary-blue:#2160e3;
+}
+.d-flex{
+    display: flex;
+}
+.mar-top{
+    margin-top: 1rem;
+}
+.d-disp{
+    opacity: 0.5;
+    pointer-events: none;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+}
+.container-wrapper{
+    width: 40vw;
+    height: 80vh;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    background-color: white;
+    /* align-items: center; */
+}
+.dimensions{
+ justify-content: space-between;
+}
+.btn-container{
+    justify-content: space-around;
+}
+.btn-container button{
+    padding: 5px;
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 5px;
+
+}
+.btn-container button:hover{
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+.btn-container input[type='color']{
+    border: none;
+}
+/* Grid-container */
+.grid-container{
+   cursor: pointer;
+   text-align: center;
+}
+.grid-item{
+    border: 0.01px solid black;
+    display: inline-block;
+    height: 10px;
+    width:10px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:1024px) {
+    .container-wrapper{
+        width: 90vw;
+        height: 80vh;
+    }
+}
+@media screen and (max-width:414px) {
+    .container-wrapper{
+        width: 90vw;
+        height: 80vh;
+    }
+
+}
